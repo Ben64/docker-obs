@@ -29,6 +29,7 @@ RUN \
   apt-get install -y --no-install-recommends \
     firefox \
     ^firefox-locale && \
+  apt-get install -y obs-studio && \
   echo "**** default firefox settings ****" && \
   FIREFOX_SETTING="/usr/lib/firefox/browser/defaults/preferences/firefox.js" && \
   echo 'pref("datareporting.policy.firstRunURL", "");' > ${FIREFOX_SETTING} && \
